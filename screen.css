@@ -1,7 +1,33 @@
 
 /* nav */
 
-nav { --nav-height: 30px; }
+body { --nav-height: 30px; --background-color: #111; }
+body { margin: 0px; }
+nav ul { margin-bottom: 0px; }
 nav ul > li { display: inline-block; width: 100px; height: var(--nav-height); }
-nav ul > li a { display: inline-block; width: inherit; height: inherit; background-color: #444; color: white; text-align: center; transition: background-color .5s; line-height: var(--nav-height); }
+nav ul > li a { display: inline-block; width: inherit; height: inherit; background-color: var(--background-color); color: white; text-align: center; transition: background-color .5s; line-height: var(--nav-height); text-decoration: none; }
 nav ul > li a:hover { background-color: #111; }
+#social-media { position: absolute; right: 10px; top: 10px; }
+nav { background-color: var(--background-color); }
+#page { position: relative; max-width: 80%; margin: 0 auto; }
+header#about-me { margin-top: 0px; padding: 20px 100px; text-align: center; background-color: #445; color: white; }
+header#overview h2 { margin-top: 0px; color: black; }
+section#examples > section { line-height: .4em; margin: 0px 0px 80px 0px; max-width: 560px; max-height: auto; }
+section#examples > section > p { line-height: 1.0em; }
+
+@media (max-width: 1000px) {
+    #social-media { position: static; }
+}
+
+@media (max-width: 900px) {
+    #page { max-width: 100%; }
+}
+
+@media (max-width: 800px) {
+    header#about-me { padding: 20px 20px; }
+}
+
+@media (max-width: 600px) {
+    iframe { margin: 0 auto; }
+    section#examples { text-align: center; }
+}
