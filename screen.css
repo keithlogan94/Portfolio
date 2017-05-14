@@ -1,0 +1,7 @@
+
+/* nav */
+
+nav { --nav-height: 30px; }
+nav ul > li { display: inline-block; width: 100px; height: var(--nav-height); }
+nav ul > li a { display: inline-block; width: inherit; height: inherit; background-color: #444; color: white; text-align: center; transition: background-color .5s; line-height: var(--nav-height); }
+nav ul > li a:hover { background-color: #111; }
