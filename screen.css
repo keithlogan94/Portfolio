@@ -1,22 +1,30 @@
-
-/* nav */
+/* Main Structure */
 
 body { --nav-height: 30px; --background-color: #111; }
-body { margin: 0px; }
+body { margin: 0px; background-color: #f7f7f7; }
+#page { position: relative; max-width: 1120px; margin: 0 auto; }
+
+/* Navigation */
+
 nav ul { margin-bottom: 0px; }
 nav ul > li { display: inline-block; width: 100px; height: var(--nav-height); }
 nav ul > li a { display: inline-block; width: inherit; height: inherit; background-color: var(--background-color); color: white; text-align: center; transition: background-color .5s; line-height: var(--nav-height); text-decoration: none; }
 nav ul > li a:hover { background-color: #111; color: #aaa; }
 #social-media { position: absolute; right: 10px; top: 10px; }
 nav { background-color: var(--background-color); }
-#page { position: relative; max-width: 1120px; margin: 0 auto; }
-header#about-me { margin-top: 0px; padding: 20px 100px; text-align: center; background-color: #445; color: #aaa; border-bottom: 3px solid #111; }
-header#overview h2 { margin-top: 0px; color: black; }
-section#examples { width: 1120px; margin: 0 auto; }
-section#examples > section { line-height: .4em; margin: 0px 10px 80px 10px; max-width: 540px; overflow: hidden; max-height: auto; float: left; background-color: #111; color: #aaa; }
 
+/* Header */
+
+header#about-me { margin-top: 0px; padding: 20px 100px; text-align: center; background-color: white; color: black; border-bottom: 3px solid #111; }
+header#overview h2 { margin-top: 0px; color: black; }
+
+/* Sections */
+
+section#examples { width: 1120px; margin: 0 auto; }
+section#examples > section { line-height: .4em; margin: 0px 10px 80px 10px; max-width: 540px; overflow: hidden; max-height: auto; float: left; color: black; }
 section#examples > section p, h4 { line-height: 1.0em; margin-left: 10px; }
 
+/* Cross-Device Compatibility */
 
 @media (max-width: 1140px) {
     section#examples > section { float: none; margin: 0px auto 80px auto; }
